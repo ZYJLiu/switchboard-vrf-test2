@@ -1,0 +1,48 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+
+{"timestamp":"2023-04-21T02:27:54.397Z","level":"debug","id":"TaskRunner","message":"No job configs found. Continuing.."}
+
+(node:5109) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+{"timestamp":"2023-04-21T02:27:54.400Z","level":"info","id":"HealthCheck","message":"health check server initialized at /healthz on PORT 8080"}
+
+{"timestamp":"2023-04-21T02:27:54.401Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_RPC: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T02:27:54.768Z","level":"debug","id":"Environment","message":"Verbose logging enabled"}
+
+{"timestamp":"2023-04-21T02:27:54.768Z","level":"info","id":"Environment","message":"@SWITCHBOARD-XYZ/COMMON: 2.1.35"}
+{"timestamp":"2023-04-21T02:27:54.768Z","level":"info","id":"Environment","message":"TASK_RUNNER_VERSION: 2.1.5"}
+{"timestamp":"2023-04-21T02:27:54.768Z","level":"info","id":"Environment","message":"ORACLE_VERSION: RC_04_11_23_17_12"}
+
+{"timestamp":"2023-04-21T02:27:54.768Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_URL: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T02:27:54.768Z","level":"info","id":"Environment","message":"CLUSTER: localnet"}
+
+{"timestamp":"2023-04-21T02:27:54.768Z","level":"info","id":"Environment","message":"RPC_URL: http://0.0.0.0:8899"}
+
+{"timestamp":"2023-04-21T02:27:54.769Z","level":"info","id":"Environment","message":"WS_URL: http://0.0.0.0:8899"}
+
+{"timestamp":"2023-04-21T02:27:54.769Z","level":"info","id":"Environment","message":"ORACLE_KEY: 76XfkxExQh54iL1vRZ4CS2RtdLsD84CjgsxfENCducAM"}
+
+{"timestamp":"2023-04-21T02:27:54.771Z","level":"info","id":"Environment","message":"LOCALNET: true"}
+
+{"timestamp":"2023-04-21T02:27:54.772Z","level":"info","id":"Environment","message":"PAYER: DfLZV18rD7wCQwjYvhTFwuvLh49WSbXFeJFPQb5czifH"}
+
+{"timestamp":"2023-04-21T02:27:54.774Z","level":"info","id":"Environment","message":"PAYER_BALANCE: 499999999.9742071"}
+
+{"timestamp":"2023-04-21T02:27:55.150Z","level":"info","id":"oracle","message":"SolanaOracle starting ..."}
+
+{"timestamp":"2023-04-21T02:27:55.151Z","level":"info","id":"","message":"Heartbeat routine started with an interval of 30.000 seconds."}
+
+{"timestamp":"2023-04-21T02:27:55.151Z","level":"info","id":"Oracle","message":"Watching event: AggregatorOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T02:27:55.153Z","level":"info","id":"Oracle","message":"Watching event: VrfRequestRandomnessEvent ..."}
+
+{"timestamp":"2023-04-21T02:27:55.153Z","level":"info","id":"Oracle","message":"Watching event: BufferRelayerOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T02:27:55.154Z","level":"info","id":"HealthCheck","message":"health check handler started"}
+
+{"timestamp":"2023-04-21T02:27:55.154Z","level":"info","id":"EventLoopMonitor","message":"Using default performance monitoring"}
+
+{"timestamp":"2023-04-21T02:27:55.169Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 5irgU4q14xLtaqBSJxB4jrj8BoKidhEAGYSAbWHPvTk1UnMFJXtRMdeKGCifNoxXsCvXVFvB1oDysEUd9AHVT8m5"}

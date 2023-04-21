@@ -1,0 +1,102 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+
+{"timestamp":"2023-04-21T02:42:07.283Z","level":"debug","id":"TaskRunner","message":"No job configs found. Continuing.."}
+
+(node:8643) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+{"timestamp":"2023-04-21T02:42:07.285Z","level":"info","id":"HealthCheck","message":"health check server initialized at /healthz on PORT 8080"}
+
+{"timestamp":"2023-04-21T02:42:07.287Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_RPC: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T02:42:07.969Z","level":"debug","id":"Environment","message":"Verbose logging enabled"}
+
+{"timestamp":"2023-04-21T02:42:07.969Z","level":"info","id":"Environment","message":"@SWITCHBOARD-XYZ/COMMON: 2.1.35"}
+
+{"timestamp":"2023-04-21T02:42:07.969Z","level":"info","id":"Environment","message":"TASK_RUNNER_VERSION: 2.1.5"}
+
+{"timestamp":"2023-04-21T02:42:07.969Z","level":"info","id":"Environment","message":"ORACLE_VERSION: RC_04_11_23_17_12"}
+
+{"timestamp":"2023-04-21T02:42:07.969Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_URL: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T02:42:07.970Z","level":"info","id":"Environment","message":"CLUSTER: localnet"}
+
+{"timestamp":"2023-04-21T02:42:07.970Z","level":"info","id":"Environment","message":"RPC_URL: http://0.0.0.0:8899"}
+{"timestamp":"2023-04-21T02:42:07.970Z","level":"info","id":"Environment","message":"WS_URL: http://0.0.0.0:8899"}
+{"timestamp":"2023-04-21T02:42:07.970Z","level":"info","id":"Environment","message":"ORACLE_KEY: 76XfkxExQh54iL1vRZ4CS2RtdLsD84CjgsxfENCducAM"}
+
+{"timestamp":"2023-04-21T02:42:07.972Z","level":"info","id":"Environment","message":"LOCALNET: true"}
+
+{"timestamp":"2023-04-21T02:42:07.973Z","level":"info","id":"Environment","message":"PAYER: DfLZV18rD7wCQwjYvhTFwuvLh49WSbXFeJFPQb5czifH"}
+
+{"timestamp":"2023-04-21T02:42:07.975Z","level":"info","id":"Environment","message":"PAYER_BALANCE: 499999999.9742071"}
+
+{"timestamp":"2023-04-21T02:42:08.272Z","level":"info","id":"oracle","message":"SolanaOracle starting ..."}
+
+{"timestamp":"2023-04-21T02:42:08.272Z","level":"info","id":"","message":"Heartbeat routine started with an interval of 30.000 seconds."}
+
+{"timestamp":"2023-04-21T02:42:08.273Z","level":"info","id":"Oracle","message":"Watching event: AggregatorOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T02:42:08.274Z","level":"info","id":"Oracle","message":"Watching event: VrfRequestRandomnessEvent ..."}
+
+{"timestamp":"2023-04-21T02:42:08.275Z","level":"info","id":"Oracle","message":"Watching event: BufferRelayerOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T02:42:08.275Z","level":"info","id":"HealthCheck","message":"health check handler started"}
+
+{"timestamp":"2023-04-21T02:42:08.275Z","level":"info","id":"EventLoopMonitor","message":"Using default performance monitoring"}
+
+{"timestamp":"2023-04-21T02:42:08.289Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 5UxhCtuGzyiQDwX9W8r5VkYcoBV793NjUZxg1juA1RdMDc2GqLSXhdb4YctNGwwB3Nkt1QKxDodkbU91GS9j3pbB"}
+
+{"timestamp":"2023-04-21T02:42:10.231Z","level":"debug","id":"EMQ8fHVoPj7sbmKRScACWNUAqbK5z6yLWyxPpGQkXRoM","message":"VrfRequestRandomnessEvent: event received"}
+
+/bin/sh: 1: rust-ecvrf: not found
+
+{"timestamp":"2023-04-21T02:42:10.291Z","level":"error","id":"EMQ8fHVoPj7sbmKRScACWNUAqbK5z6yLWyxPpGQkXRoM","message":"Failed to generate VRF proof using the rust-ecvrf binary, Error: Command failed: rust-ecvrf prove 1c2f98c7af9c35cab0a29dab22c4d448ea1ab7e74139bdf3726b3bfe85970494 \"9759c8edba2d7081f2bf0a60ea700a74831d36a6ed533072af6fd27062008150\"\n/bin/sh: 1: rust-ecvrf: not found\n"}
+
+{"timestamp":"2023-04-21T02:42:10.583Z","level":"info","id":"EMQ8fHVoPj7sbmKRScACWNUAqbK5z6yLWyxPpGQkXRoM","message":"VRF (Blockhash): proveAndVerify packed into 48 txns"}
+
+{"timestamp":"2023-04-21T02:42:10.640Z","level":"info","id":"EMQ8fHVoPj7sbmKRScACWNUAqbK5z6yLWyxPpGQkXRoM","message":"VRF: Completed in 48 txns"}
+
+{"timestamp":"2023-04-21T02:42:38.303Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: K3WpVsfcBtVs4LTzPhFdXgKH6jXKkj8fvgUfuhBRRqEUtVz3vg3WC4Yx3pJzuFRZ4i2NhF4cYaJtcwnrWNExKKf"}
+
+{"timestamp":"2023-04-21T02:43:08.314Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 4g4hL5De7qAvzFPiUG6NDfwZEE4ccW5bKQfu8HAVSPFVL1zTC1q8YKMcjTeVh65iT9Dhm6uMArkk4JZU7y3gdNpV"}
+
+{"timestamp":"2023-04-21T02:43:38.324Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: sbZjZBdyHbDG3xqF5AZcM15bZADb6LFW1S98YzD52hEdk3rUmGbetkrATp2VHF3zLESTDPuxUpaNnb98xJxKVNr"}
+
+{"timestamp":"2023-04-21T02:44:08.334Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 4Gf6F1rnR1dmVYq6hPDcGSr5D6cXksFD7ub3etKK5m9q83iwYVbufHd5K7HfvoTKHvngwKQ61FiY67mLHLF4bPTG"}
+
+{"timestamp":"2023-04-21T02:44:38.344Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 79ShGjv96dZNFNktqLQUFhsnc4kNa6yZa5VVHMmtexUW9LuLrUoqUxGjPompkE724beUcNMKV3fgx2fXo6cWpzo"}
+
+{"timestamp":"2023-04-21T02:45:08.355Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 2LProPfLzMA7Fy91Qq7hqR3vswWtiE5vq1rfcU9GGyhs26p3XTzm7LAU2mAruccWd32HpZCENVP9pnjFDg1JmSXD"}
+
+{"timestamp":"2023-04-21T02:45:38.366Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 518e7hCznNe57mab8LXzNST8qkAz3MCnTPGagwme7e6TpwYsPzY4otsevbscBzHQBk9gDFUBD1VcP9q3YRTgR95Q"}
+
+{"timestamp":"2023-04-21T02:46:08.376Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 3Vy6xvhoYqMGDw19r6UoaodTXgz4oX8mGyaxEmXsNmd8etfh2gD2kbW3MJ6K692G8BMFyhFphAjX231qz9gwjUeC"}
+
+{"timestamp":"2023-04-21T02:46:38.385Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 4afmyT6Y2d88G1JTgLo2JRL3ERKwkayCMUKEdT8V4KFCkFo469Yfj5abB7PxUWmKqCFUXhunXAhaZBuDN2rekLNy"}
+
+{"timestamp":"2023-04-21T02:47:08.394Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 2Ev7VDKF8up8t8yUPRCPSFix8LL8YpC28itAjMYm8qQQMKud9JMvq8eUu29caZviXv2TqT7G9zHzFDrVBnCDm21W"}
+
+{"timestamp":"2023-04-21T02:47:38.403Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 4kLZ3v7PAX75jT1zo7SegvHgEbcDkyGa3NdjiAaXajBb1pdaLqZtFEK3n1eGB1MrjKPibU8H4C2H5bU2PpDu69Ru"}
+
+{"timestamp":"2023-04-21T02:48:08.414Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 2p4MSEobgWV9h1KhV8dhbXATeQhV24mkUguw5DPjnccVgmsmvKDUaFHVtZZf3jQzLpGvVH57b794zpT6A33oS6nR"}
+
+{"timestamp":"2023-04-21T02:48:38.425Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: u6ywQWUbTiGsFpxu2oRrmjPbsqptw6ZT6vfT1SpAbz2bngGr7gmNyLeSVpnhUWtqjmPMi5fswXdMwtVNwze6Vwf"}
+
+{"timestamp":"2023-04-21T02:49:08.435Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 3BT4u81YHKAZ1uBhQvwDk67Z1dNL7L5VN1rJhDffRA7wYgXaczcMoG1ENczfkLFLztR5WKgEY3qBTPJ33PgL4hyh"}
+
+{"timestamp":"2023-04-21T02:49:38.445Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: FDnpr6Riy7YwuLUdDWcAn2LDMoLmrzNg3McwxLHMGQUNVQceBb1RBsZTYepX4KVcBhbMuPUbPpE9konaxGf9JVB"}
+
+{"timestamp":"2023-04-21T02:50:08.454Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 29CdmUh5ePC9Lmzd1nq99mafmGvrjMxCGrd5KZTU99wUMo4q5GwAFdHZW7GinaF727XM46kHBkZLz9GBPkt4qdag"}
+
+{"timestamp":"2023-04-21T02:50:38.464Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 4pf4Wk6EocTektrSXX14rVZEAUwfibriJbTQWSeoc1dH96tJKKyhZAqzNKDCEvveo5awgaPD5hDGKBA63wG6Z3RZ"}
+
+{"timestamp":"2023-04-21T02:51:08.472Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 5y4AfxuXL1WCqYsdap6iTXsxvBu5DAM75JyyXJetE7U8FE5vLsgQKSbDdVSACxi6y6Gg9d3kDk4w8DCkqnFaq59M"}
+
+{"timestamp":"2023-04-21T02:51:38.482Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 3jedoyMsRQVzJdDv7qqCmWdE9Y49F5ygshSH8AZSMtSLtbkA6nwLYgZkjtbHYtNatDeXSqXoYtpCgfHshB61D8ss"}
+
+{"timestamp":"2023-04-21T02:52:08.492Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 4sENbSiWAnTtGEziWaS1duPZNjbFEGXeSk3F5LKBo3455Cz6gMT39MKr66NdGNZsjnqSP5eRCqCSNZSaXwhZCees"}
+
+{"timestamp":"2023-04-21T02:52:38.502Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: rh7fRkbBRbMA9PyTj7dq7aEqdy5HJC9jm7Ywbet8wNHQtwYzyWi7oH9dUJU3N7sxHurDxbDwXiEhqVSboFDxWQi"}
+
+{"timestamp":"2023-04-21T02:53:08.513Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 3kBPFx9ToE1Tb2MoQEykZobyD84tjLvBFhzmZfMtvbBvUK4evHUW8sNRU5tLDeDugfDAHrTgK6syjFSjN3zqPP9A"}

@@ -1,0 +1,57 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+
+{"timestamp":"2023-04-21T02:29:22.558Z","level":"debug","id":"TaskRunner","message":"No job configs found. Continuing.."}
+
+(node:6796) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+{"timestamp":"2023-04-21T02:29:22.561Z","level":"info","id":"HealthCheck","message":"health check server initialized at /healthz on PORT 8080"}
+
+{"timestamp":"2023-04-21T02:29:22.562Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_RPC: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T02:29:22.906Z","level":"debug","id":"Environment","message":"Verbose logging enabled"}
+
+{"timestamp":"2023-04-21T02:29:22.906Z","level":"info","id":"Environment","message":"@SWITCHBOARD-XYZ/COMMON: 2.1.35"}
+{"timestamp":"2023-04-21T02:29:22.906Z","level":"info","id":"Environment","message":"TASK_RUNNER_VERSION: 2.1.5"}
+{"timestamp":"2023-04-21T02:29:22.906Z","level":"info","id":"Environment","message":"ORACLE_VERSION: RC_04_11_23_17_12"}
+
+{"timestamp":"2023-04-21T02:29:22.907Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_URL: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T02:29:22.907Z","level":"info","id":"Environment","message":"CLUSTER: localnet"}
+
+{"timestamp":"2023-04-21T02:29:22.907Z","level":"info","id":"Environment","message":"RPC_URL: http://0.0.0.0:8899"}
+
+{"timestamp":"2023-04-21T02:29:22.907Z","level":"info","id":"Environment","message":"WS_URL: http://0.0.0.0:8899"}
+{"timestamp":"2023-04-21T02:29:22.907Z","level":"info","id":"Environment","message":"ORACLE_KEY: 76XfkxExQh54iL1vRZ4CS2RtdLsD84CjgsxfENCducAM"}
+
+{"timestamp":"2023-04-21T02:29:22.909Z","level":"info","id":"Environment","message":"LOCALNET: true"}
+
+{"timestamp":"2023-04-21T02:29:22.910Z","level":"info","id":"Environment","message":"PAYER: DfLZV18rD7wCQwjYvhTFwuvLh49WSbXFeJFPQb5czifH"}
+
+{"timestamp":"2023-04-21T02:29:22.912Z","level":"info","id":"Environment","message":"PAYER_BALANCE: 499999999.9742071"}
+
+{"timestamp":"2023-04-21T02:29:23.280Z","level":"info","id":"oracle","message":"SolanaOracle starting ..."}
+
+{"timestamp":"2023-04-21T02:29:23.280Z","level":"info","id":"","message":"Heartbeat routine started with an interval of 30.000 seconds."}
+
+{"timestamp":"2023-04-21T02:29:23.281Z","level":"info","id":"Oracle","message":"Watching event: AggregatorOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T02:29:23.283Z","level":"info","id":"Oracle","message":"Watching event: VrfRequestRandomnessEvent ..."}
+
+{"timestamp":"2023-04-21T02:29:23.283Z","level":"info","id":"Oracle","message":"Watching event: BufferRelayerOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T02:29:23.283Z","level":"info","id":"HealthCheck","message":"health check handler started"}
+
+{"timestamp":"2023-04-21T02:29:23.283Z","level":"info","id":"EventLoopMonitor","message":"Using default performance monitoring"}
+
+{"timestamp":"2023-04-21T02:29:23.298Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 2RxnmXp2xcD8mj9vewwJqQWpaXCjFLDzMggA9xCFzVq33tDvSSG7cftc89bv5MqcCAHTsyJH9BpzDgHd7zgw1zuu"}
+
+{"timestamp":"2023-04-21T02:29:24.952Z","level":"debug","id":"7ejP1AHuKQq2MVFStiyWKqZKbTsKj2eQkewDRRrQxKz8","message":"VrfRequestRandomnessEvent: event received"}
+
+/bin/sh: 1: rust-ecvrf: not found
+
+{"timestamp":"2023-04-21T02:29:25.001Z","level":"error","id":"7ejP1AHuKQq2MVFStiyWKqZKbTsKj2eQkewDRRrQxKz8","message":"Failed to generate VRF proof using the rust-ecvrf binary, Error: Command failed: rust-ecvrf prove 1c2f98c7af9c35cab0a29dab22c4d448ea1ab7e74139bdf3726b3bfe85970494 \"64f00231bd0160b4581e1693fd3d724a254a91261a2c5f982ee0eca0b07de595\"\n/bin/sh: 1: rust-ecvrf: not found\n"}
+
+{"timestamp":"2023-04-21T02:29:25.283Z","level":"info","id":"7ejP1AHuKQq2MVFStiyWKqZKbTsKj2eQkewDRRrQxKz8","message":"VRF (Blockhash): proveAndVerify packed into 48 txns"}
+
+{"timestamp":"2023-04-21T02:29:25.351Z","level":"info","id":"7ejP1AHuKQq2MVFStiyWKqZKbTsKj2eQkewDRRrQxKz8","message":"VRF: Completed in 48 txns"}

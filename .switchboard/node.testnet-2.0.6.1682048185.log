@@ -1,0 +1,66 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+
+{"timestamp":"2023-04-21T03:36:27.605Z","level":"debug","id":"TaskRunner","message":"No job configs found. Continuing.."}
+
+(node:10515) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+{"timestamp":"2023-04-21T03:36:27.608Z","level":"info","id":"HealthCheck","message":"health check server initialized at /healthz on PORT 8080"}
+
+{"timestamp":"2023-04-21T03:36:27.609Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_RPC: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T03:36:28.279Z","level":"debug","id":"Environment","message":"Verbose logging enabled"}
+
+{"timestamp":"2023-04-21T03:36:28.279Z","level":"info","id":"Environment","message":"@SWITCHBOARD-XYZ/COMMON: 2.1.35"}
+
+{"timestamp":"2023-04-21T03:36:28.279Z","level":"info","id":"Environment","message":"TASK_RUNNER_VERSION: 2.1.5"}
+
+{"timestamp":"2023-04-21T03:36:28.280Z","level":"info","id":"Environment","message":"ORACLE_VERSION: RC_04_11_23_17_12"}
+
+{"timestamp":"2023-04-21T03:36:28.280Z","level":"info","id":"Environment","message":"TASK_RUNNER_SOLANA_URL: https://api.mainnet-beta.solana.com"}
+
+{"timestamp":"2023-04-21T03:36:28.280Z","level":"info","id":"Environment","message":"CLUSTER: devnet"}
+
+{"timestamp":"2023-04-21T03:36:28.280Z","level":"info","id":"Environment","message":"RPC_URL: https://api.devnet.solana.com"}
+{"timestamp":"2023-04-21T03:36:28.280Z","level":"info","id":"Environment","message":"WS_URL: https://api.devnet.solana.com"}
+{"timestamp":"2023-04-21T03:36:28.280Z","level":"info","id":"Environment","message":"ORACLE_KEY: 76XfkxExQh54iL1vRZ4CS2RtdLsD84CjgsxfENCducAM"}
+
+{"timestamp":"2023-04-21T03:36:28.709Z","level":"info","id":"Environment","message":"PAYER: DfLZV18rD7wCQwjYvhTFwuvLh49WSbXFeJFPQb5czifH"}
+
+{"timestamp":"2023-04-21T03:36:29.138Z","level":"info","id":"Environment","message":"PAYER_BALANCE: 2.087100756"}
+
+{"timestamp":"2023-04-21T03:36:31.078Z","level":"info","id":"oracle","message":"SolanaOracle starting ..."}
+
+{"timestamp":"2023-04-21T03:36:31.079Z","level":"info","id":"","message":"Heartbeat routine started with an interval of 30.000 seconds."}
+
+{"timestamp":"2023-04-21T03:36:31.079Z","level":"info","id":"Oracle","message":"Watching event: AggregatorOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T03:36:31.082Z","level":"info","id":"Oracle","message":"Watching event: VrfRequestRandomnessEvent ..."}
+
+{"timestamp":"2023-04-21T03:36:31.082Z","level":"info","id":"Oracle","message":"Watching event: BufferRelayerOpenRoundEvent ..."}
+
+{"timestamp":"2023-04-21T03:36:31.082Z","level":"info","id":"HealthCheck","message":"health check handler started"}
+
+{"timestamp":"2023-04-21T03:36:31.082Z","level":"info","id":"EventLoopMonitor","message":"Using default performance monitoring"}
+
+{"timestamp":"2023-04-21T03:36:31.855Z","level":"debug","id":"Heartbeat","message":"HeartbeatSignature: 4xZA88pnHC7VNdz7aVmy3FEf5ThvsjcaSH6Sjy9jj5V8npH13jX3bYGn5u6p6vAipfJL68KkuGtQD6dvhSkYB68Y"}
+
+{"timestamp":"2023-04-21T03:36:36.160Z","level":"debug","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"VrfRequestRandomnessEvent: event received"}
+
+/bin/sh: 1: rust-ecvrf: not found
+
+{"timestamp":"2023-04-21T03:36:36.207Z","level":"error","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"Failed to generate VRF proof using the rust-ecvrf binary, Error: Command failed: rust-ecvrf prove 1c2f98c7af9c35cab0a29dab22c4d448ea1ab7e74139bdf3726b3bfe85970494 \"fec0c312d7ee612fac2951ad976ae6bfce51adb7c1fd76c5ec5573775b519755\"\n/bin/sh: 1: rust-ecvrf: not found\n"}
+
+{"timestamp":"2023-04-21T03:36:36.258Z","level":"debug","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"VrfRequestRandomnessEvent: event received"}
+
+/bin/sh: 1: rust-ecvrf: not found
+
+{"timestamp":"2023-04-21T03:36:36.314Z","level":"error","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"Failed to generate VRF proof using the rust-ecvrf binary, Error: Command failed: rust-ecvrf prove 1c2f98c7af9c35cab0a29dab22c4d448ea1ab7e74139bdf3726b3bfe85970494 \"fec0c312d7ee612fac2951ad976ae6bfce51adb7c1fd76c5ec5573775b519755\"\n/bin/sh: 1: rust-ecvrf: not found\n"}
+
+{"timestamp":"2023-04-21T03:36:36.674Z","level":"info","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"VRF (Blockhash): proveAndVerify packed into 48 txns"}
+
+{"timestamp":"2023-04-21T03:36:37.620Z","level":"info","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"VRF (Blockhash): proveAndVerify packed into 48 txns"}
+
+{"timestamp":"2023-04-21T03:36:37.808Z","level":"info","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"VRF: Completed in 48 txns"}
+
+{"timestamp":"2023-04-21T03:36:38.543Z","level":"info","id":"G7pKdj5MEA2Ws9m52eUzPEFVJVxQtaPtFvM9DyDQSAsF","message":"VRF: Completed in 48 txns"}
