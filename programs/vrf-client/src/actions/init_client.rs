@@ -21,6 +21,16 @@ pub struct InitClient<'info> {
     #[account(mut)]
     pub payer: Signer<'info>,
     pub system_program: Program<'info, System>,
+
+    // Test
+    #[account(
+        init,
+        payer = payer,
+        space = 8 + 8,
+        seeds = [b"player", payer.key().as_ref()],
+        bump,
+    )]
+    pub player_data: Account<'info, PlayerData>,
 }
 
 #[derive(Clone, AnchorSerialize, AnchorDeserialize)]
@@ -38,7 +48,9 @@ impl InitClient<'_> {
         Ok(())
     }
 
-    pub fn actuate(ctx: &Context<Self>, params: &InitClientParams) -> Result<()> {
+    pub fn actuate(ctx: &mut Context<Self>, params: &InitClientParams) -> Result<()> {
+        ctx.accounts.player_data.health = MAX_HEALTH;
+
         msg!("init_client actuate");
 
         let mut state = ctx.accounts.state.load_init()?;

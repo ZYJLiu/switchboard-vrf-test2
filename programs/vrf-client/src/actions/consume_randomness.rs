@@ -14,6 +14,16 @@ pub struct ConsumeRandomness<'info> {
     )]
     pub state: AccountLoader<'info, VrfClientState>,
     pub vrf: AccountLoader<'info, VrfAccountData>,
+
+    // Test
+    #[account(
+        mut,
+        seeds = [b"player", payer.key().as_ref()],
+        bump,
+    )]
+    pub player_data: Account<'info, PlayerData>,
+    /// CHECK:
+    pub payer: AccountInfo<'info>,
 }
 
 #[derive(Clone, AnchorSerialize, AnchorDeserialize)]
@@ -24,7 +34,7 @@ impl ConsumeRandomness<'_> {
         Ok(())
     }
 
-    pub fn actuate(ctx: &Context<Self>, _params: &ConsumeRandomnessParams) -> Result<()> {
+    pub fn actuate(ctx: &mut Context<Self>, _params: &ConsumeRandomnessParams) -> Result<()> {
         let vrf = ctx.accounts.vrf.load()?;
         let result_buffer = vrf.get_result()?;
         if result_buffer == [0u8; 32] {
@@ -58,6 +68,9 @@ impl ConsumeRandomness<'_> {
                 timestamp: state.timestamp,
             });
         }
+
+        ctx.accounts.player_data.health =
+            ctx.accounts.player_data.health.saturating_sub(result as u8);
 
         Ok(())
     }

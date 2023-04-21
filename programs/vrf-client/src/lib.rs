@@ -10,6 +10,7 @@ pub use switchboard_v2::{
 };
 
 const STATE_SEED: &[u8] = b"CLIENTSEED";
+const MAX_HEALTH: u8 = 100;
 
 declare_id!("CdqwWb5rx7kzQfFXmhSAdZffGcm1uZRHzmDbpZywn8XP");
 
@@ -18,8 +19,8 @@ pub mod vrf_client {
     use super::*;
 
     #[access_control(ctx.accounts.validate(&ctx, &params))]
-    pub fn init_client(ctx: Context<InitClient>, params: InitClientParams) -> Result<()> {
-        InitClient::actuate(&ctx, &params)
+    pub fn init_client(mut ctx: Context<InitClient>, params: InitClientParams) -> Result<()> {
+        InitClient::actuate(&mut ctx, &params)
     }
 
     #[access_control(ctx.accounts.validate(&ctx, &params))]
@@ -32,11 +33,16 @@ pub mod vrf_client {
 
     #[access_control(ctx.accounts.validate(&ctx, &params))]
     pub fn consume_randomness(
-        ctx: Context<ConsumeRandomness>,
+        mut ctx: Context<ConsumeRandomness>,
         params: ConsumeRandomnessParams,
     ) -> Result<()> {
-        ConsumeRandomness::actuate(&ctx, &params)
+        ConsumeRandomness::actuate(&mut ctx, &params)
     }
+}
+
+#[account]
+pub struct PlayerData {
+    pub health: u8,
 }
 
 #[repr(packed)]

@@ -16,6 +16,12 @@ describe("vrf-client", () => {
   const program: anchor.Program<VrfClient> = anchor.workspace.VrfClient
   const payer = (provider.wallet as sbv2.AnchorWallet).payer
 
+  // player state account
+  const [playerPDA] = anchor.web3.PublicKey.findProgramAddressSync(
+    [Buffer.from("player"), payer.publicKey.toBuffer()],
+    program.programId
+  )
+
   // Keypair used to create new VRF account
   const vrfSecret = anchor.web3.Keypair.generate()
   console.log(`VRF Account: ${vrfSecret.publicKey}`)
@@ -36,6 +42,8 @@ describe("vrf-client", () => {
       // ensure all accounts in consumeRandomness are populated
       { pubkey: vrfClientKey, isSigner: false, isWritable: true },
       { pubkey: vrfSecret.publicKey, isSigner: false, isWritable: false },
+      { pubkey: playerPDA, isSigner: false, isWritable: true },
+      { pubkey: payer.publicKey, isSigner: false, isWritable: false },
     ],
 
     ixData: vrfIxCoder.encode("consumeRandomness", ""), // pass any params for instruction here
@@ -120,16 +128,21 @@ describe("vrf-client", () => {
     // Create VRF Client account
     await program.methods
       .initClient({
-        maxResult: new anchor.BN(1337),
+        maxResult: new anchor.BN(100),
       })
       .accounts({
         state: vrfClientKey,
         vrf: vrfAccount.publicKey,
         payer: payer.publicKey,
         systemProgram: anchor.web3.SystemProgram.programId,
+        playerData: playerPDA,
       })
       .rpc()
     console.log(`Created VrfClient Account: ${vrfClientKey}`)
+
+    const playerData = await program.account.playerData.fetch(playerPDA)
+    console.log(`Player Health: ${playerData.health}`)
+    assert(playerData.health === 100)
   })
 
   it("request_randomness", async () => {
@@ -188,14 +201,18 @@ describe("vrf-client", () => {
     )
     console.log(`VrfClient Result: ${vrfClientState.result.toString(10)}`)
 
-    const callbackTxnMeta = await vrfAccount.getCallbackTransactions()
-    console.log(
-      JSON.stringify(
-        callbackTxnMeta.map((tx) => tx.meta.logMessages),
-        undefined,
-        2
-      )
-    )
+    const playerData = await program.account.playerData.fetch(playerPDA)
+    console.log(`Player Health: ${playerData.health}`)
+    assert(playerData.health === 100 - vrfClientState.result.toNumber())
+
+    // const callbackTxnMeta = await vrfAccount.getCallbackTransactions()
+    // console.log(
+    //   JSON.stringify(
+    //     callbackTxnMeta.map((tx) => tx.meta.logMessages),
+    //     undefined,
+    //     2
+    //   )
+    // )
 
     assert(!vrfClientState.result.eq(new BN(0)), "Vrf Client holds no result")
   })
